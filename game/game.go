@@ -1,14 +1,17 @@
 package game
 
 type GameState struct {
-	Deck Deck
-	State uint // 0: player move, 1: dealer move, 2: player win, 3: dealer win, 4: draw, 5: player bust
+
+	// Game state
+	Deck  Deck
+	State []int // 0: player move, 1: dealer move, 2: player win, 3: dealer win, 4: draw, 5: player bust
+	Value []int // value of each hand - used for splitting / doubling down
 
 	// Player's hand
 	PlayerHand  [][]Card // allow for splitting hands
-	PlayerScore int
-	playerAce   bool // true if player has an Ace in their hand
-	Moves uint // legal moves (hit, double down, split)
+	PlayerScore []int
+	playerAce   []bool // true if player has an Ace in their hand
+	Moves       []int  // legal moves (hit, double down, split)
 
 	// Dealer's hand
 	DealerHand       []Card
@@ -24,17 +27,21 @@ type GameState struct {
 
 // Player can hit, stand, double down, or split
 
-
 // ----------------------------------------------------------------------------
 // GAME LOGIC
 
-func (gs *GameState) nextMove(playerMove bool) {
+func (gs *GameState) calcNext(playerMove bool) {
 
 	// Calculate scores
-
+	return
 }
 
-func (gs *GameState) calculateScore() {
+func (gs *GameState) calculateScore(hand []Card) int {
+
+	// Calculate the score of a hand
+	score := 0
+	return score
+}
 
 func StartGame() GameState {
 
@@ -43,8 +50,8 @@ func StartGame() GameState {
 		Deck: newDeck(),
 
 		PlayerHand:  make([][]Card, 0), // Start with no player hands
-		PlayerScore: 0,
-		playerAce:   false,
+		PlayerScore: make([]int, 0),
+		playerAce:   make([]bool, 0),
 
 		DealerHand:       make([]Card, 0),
 		DealerScore:      0,
@@ -56,7 +63,9 @@ func StartGame() GameState {
 	// Deal initial cards to player and dealer
 	gs.dealInitialCards()
 
-	gs.NextMove()
+	// start game state calculations
+	gs.calcNext(false)
+	gs.calcNext(true)
 	return gs
 }
 
