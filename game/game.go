@@ -11,6 +11,7 @@ type GameState struct {
 	
 	HandToPlay int // player hand to play
 	PlayerMoves []int // legal moves for the player (hit, double down, split) - 0b000: no moves, 0b001: hit, 0b010: double down, 0b100: split
+	HandValues []int
 
 	// Player's hand
 	PlayerHand  [][]Card // allow for splitting hands
@@ -27,6 +28,8 @@ type GameState struct {
 	DealerScore int
 }
 
+
+
 // ----------------------------------------------------------------------------
 // GAME LOGIC
 
@@ -34,21 +37,23 @@ type GameState struct {
 func (gs *GameState) ActionCalc(playerMove int) {
 	// Acts as next step in the game logic - playerMove if player has not stood yet
 	active_turn := true // true if player can still act
+
 	if playerMove == 0 { // stand
-		active_turn = false // player has stood, no more actions
+		active_turn = false 
 	}
-	// draw new card -- need to make this a function
 	if playerMove == 0b001 { // hit
+		gs.drawCard(gs.HandToPlay)
 
 	} else if playerMove == 0b010 { // double down
-		active_turn = false // player has doubled down, no more actions
-		// double value
-		// draw one card
-
+		active_turn = false
+		gs.HandValues[gs.HandToPlay] *= 2
+		gs.drawCard(gs.HandToPlay)
 
 	} else if playerMove == 0b100 { // split
 		// Player splits their hand into two hands
 		// This will be handled in the next turn
+
+		// TODO:
 	} else {
 		panic("Error: Invalid player move: " + strconv.Itoa(playerMove))
 	}
@@ -61,17 +66,55 @@ func (gs *GameState) ActionCalc(playerMove int) {
 		
 		if gs.HandToPlay >= len(gs.PlayerHand) {
 			// All player hands have been played, now it's the dealer's turn
-			// TODO
+			// TODO game_end
 			return
 		}	
 		
 	}
-
-	// determine legal moves for the next player to act
+	// update player states ready for next turn
+	gs.UpdatePlayerState()
 	gs.calcPlayMoves()
 
 	return // return back to the game loop
 }
+
+
+func StartGame() GameState {
+
+	// Initialize a new game state
+	gs := GameState{
+		Deck: newDeck(),
+		// State of play
+		HandToPlay: 0,
+		PlayerMoves: make([]int, 0), // legal moves (hit, double down, split)
+		HandValues: make([]int, 1),
+
+		// Player Hands 
+		PlayerHand:  make([][]Card, 0), // Start with no player hands
+		PlayerScore: make([]int, 0),
+		playerAce:   make([]bool, 0),
+
+		// Dealer Hands
+		DealerHand:       make([]Card, 0),
+		DealerScore:      0,
+		dealerShownScore: 0,
+		dealerAce:        false,
+		dealerShownAce:   false, // ? do I need this?
+	}
+
+	// Deal initial cards to player and dealer
+	gs.dealInitialCards()
+	
+	// update player states
+	gs.UpdatePlayerState()
+
+	// TODO
+	// calculate initial dealers state
+
+
+	return gs
+}
+
 
 func (gs *GameState) calcPlayMoves() {
 	// Calculate the legal moves for the player based on their hand
@@ -85,7 +128,7 @@ func (gs *GameState) calcPlayMoves() {
 
 	if gs.PlayerScore[playerMove] < 21 {
 		// player can double
-		legalMoves |= 0b010 
+		legalMoves |= 0b010
 	}
 	if gs.PlayerHand[playerMove][0].Rank == gs.PlayerHand[playerMove][1].Rank {
 		// player can split
@@ -115,40 +158,11 @@ func (gs *GameState) UpdatePlayerState() {
 	gs.calcPlayMoves()
 }
 
-func StartGame() GameState {
-
-	// Initialize a new game state
-	gs := GameState{
-		Deck: newDeck(),
-		// State of play
-		HandToPlay: 0,
-		PlayerMoves: make([]int, 0), // legal moves (hit, double down, split)
-
-		// Player Hands 
-		PlayerHand:  make([][]Card, 0), // Start with no player hands
-		PlayerScore: make([]int, 0),
-		playerAce:   make([]bool, 0),
-
-		// Dealer Hands
-		DealerHand:       make([]Card, 0),
-		DealerScore:      0,
-		dealerShownScore: 0,
-		dealerAce:        false,
-		dealerShownAce:   false, // ? do I need this?
-	}
-
-	// Deal initial cards to player and dealer
-	gs.dealInitialCards()
-	
-	// update player states
-	gs.UpdatePlayerState()
-
-	// TODO
-	// calculate dealers state
-
-
-	return gs
+func (gs *GameState) endGame() {
+	// TODO: runs once game is over
+	// Computes dealer hand/moves + final state computation
 }
+
 // --------------------------
 // gamestate helper functions
 // --------------------------
@@ -170,6 +184,12 @@ func (gs *GameState) dealInitialCards() {
 	gs.PlayerScore = append(gs.PlayerScore, calculateScore(playerHand))
 	gs.playerAce = append(gs.playerAce, false) // Initialize ace status
 	gs.PlayerMoves = append(gs.PlayerMoves, 0b001) // Player can hit or stand initially
+	gs.HandValues = append(gs.HandValues, 1)
+}
+
+func (gs *GameState) drawCard(hand_ind int) {
+	// draw card into hand
+	// TODO
 }
 
 func calculateScore(hand []Card) int {
@@ -185,6 +205,7 @@ func calculateScore(hand []Card) int {
 	}
 	return score
 }
+
 
 
 // ============================================================================

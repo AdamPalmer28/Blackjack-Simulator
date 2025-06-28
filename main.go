@@ -92,6 +92,44 @@ func blackjackCLI() {
 			default:
 				fmt.Println("Invalid move. Please choose a valid option.")
 
+			// after hand is done
+			if gs.HandToPlay > len(gs.PlayerHand) {
+				fmt.Println("Game is over")
+				// TODO: print dealer hand
+
+				// game is over
+				for i, hand := range gs.PlayerHand {
+					fmt.Printf("\n--- Hand %d ---", i+1)
+					// TODO: print hand
+					state := gs.State[i]
+					switch state {
+						case 2:
+							fmt.Printf(" Win")
+						case 3:
+							fmt.Printf(" Loss")
+						case 4:
+							fmt.Printf(" Draw")
+						case 5:
+							fmt.Printf(" Bust")
+						default:
+							fmt.Println("ERROR state: ", state)
+					}
+				}
+
+				break 
+			}
+			fmt.Println("Would you like to play again? y or n")
+			input, _ := reader.ReadString('\n')
+			playerResp, err := strconv.Atoi(string(input[0]))
+			switch playerResp {
+			case 'y': 
+				continue // restart the same
+			case 'n':
+				break // break out of the loop
+			}
+			// TODO: what if response isn't recognised
+			
+			}
 			
 		}
 	}
