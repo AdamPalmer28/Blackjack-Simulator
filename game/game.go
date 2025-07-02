@@ -1,6 +1,8 @@
 package game
 
-import "strconv"
+import (
+	"strconv"
+)
 
 type GameState struct {
 
@@ -40,8 +42,8 @@ func (gs *GameState) ActionCalc(playerMove int) {
 
 	if playerMove == 0 { // stand
 		active_turn = false 
-	}
-	if playerMove == 0b001 { // hit
+
+	} else if playerMove == 0b001 { // hit
 		gs.drawCard(gs.HandToPlay)
 
 	} else if playerMove == 0b010 { // double down
@@ -64,24 +66,21 @@ func (gs *GameState) ActionCalc(playerMove int) {
 	if !active_turn {
 		gs.HandToPlay++
 		
-		if gs.HandToPlay >= len(gs.PlayerHand) {
+		if gs.HandToPlay + 1 >= len(gs.PlayerHand) {
 			// All player hands have been played, now it's the dealer's turn
 			// TODO game_end
 			return
 		}	
 		
 	}
-	// update player states ready for next turn
 	gs.UpdatePlayerState()
-	gs.calcPlayMoves()
-
 	return // return back to the game loop
 }
 
 
+// Initialize a new game state
 func StartGame() GameState {
 
-	// Initialize a new game state
 	gs := GameState{
 		Deck: newDeck(),
 		// State of play
@@ -118,12 +117,10 @@ func StartGame() GameState {
 
 func (gs *GameState) calcPlayMoves() {
 	// Calculate the legal moves for the player based on their hand
-	// This will be called after last players action
-
 	// Legal moves are double, split, hit (111) note stand is always possible
+	playerMove := gs.HandToPlay
 
 	// Reset moves
-	playerMove := gs.HandToPlay
 	legalMoves := 0b001
 
 	if gs.PlayerScore[playerMove] < 21 {
@@ -134,17 +131,16 @@ func (gs *GameState) calcPlayMoves() {
 		// player can split
 		legalMoves |= 0b100
 	}
-
-	// Add legal moves to the player's moves
 	gs.PlayerMoves[playerMove] = legalMoves
 }
 
 func (gs *GameState) UpdatePlayerState() {
-	// player score, legal moves
+	// player score, ace, legal moves
 	ind := gs.HandToPlay
 
-	// Calculate the player's score
+	// score
 	gs.PlayerScore[ind] = calculateScore(gs.PlayerHand[ind])
+	
 	// Check if player has an Ace
 	gs.playerAce[ind] = false
 	for _, card := range gs.PlayerHand[ind] {
@@ -153,8 +149,7 @@ func (gs *GameState) UpdatePlayerState() {
 			break
 		}
 	}
-
-	// Calculate legal moves for the player
+	// legal moves for the player
 	gs.calcPlayMoves()
 }
 
@@ -189,7 +184,8 @@ func (gs *GameState) dealInitialCards() {
 
 func (gs *GameState) drawCard(hand_ind int) {
 	// draw card into hand
-	// TODO
+	new_card := gs.Deck.Draw()
+	gs.PlayerHand[hand_ind] = append(gs.PlayerHand[hand_ind], new_card)
 }
 
 func calculateScore(hand []Card) int {

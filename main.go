@@ -35,104 +35,97 @@ func mainMenuCLI() {
 	}
 }
 
-func blackjackCLI() {
+func blackjackCLI() bool {
 	fmt.Println("Welcome to the Blackjack CLI!")
 	fmt.Println("This is a simple command-line interface for playing Blackjack.")
 
 	reader := bufio.NewReader(os.Stdin)
 	
-	for {
-		gs := game.StartGame()// Initialize the game state
-		
-		for {
-			gs.Print() // Display the initial game state
-			ind := gs.HandToPlay
-			fmt.Printf("\n--- Hand %d ---\n", ind+1)
+	gs := game.StartGame()// Initialize the game state
+	
+	for { // ! START OF HAND LOOP LOGIC
+		// --------------------------------------------
+		gs.Print() // Display the initial game state
+		ind := gs.HandToPlay
+		fmt.Printf("\n--- Hand %d ---\n", ind+1)
 
-			moves := gs.PlayerMoves[ind]
-			// 1. Hit, 2. Stand, 3. Double Down, 4. Split
-			fmt.Println("Available moves:")
-			if moves&0b001 != 0 {
-				fmt.Println("1. Hit")
-				fmt.Println("2. Stand")
-			}
+		moves := gs.PlayerMoves[ind]
+		// 1. Hit, 2. Stand, 3. Double Down, 4. Split
+		fmt.Println("Available moves:")
+		if moves&0b001 != 0 {
+			fmt.Println("1. Hit")
+			fmt.Println("2. Stand")
+		}
+		if moves&0b010 != 0 {
+			fmt.Println("3. Double Down")
+		}						
+		if moves&0b100 != 0 {
+			fmt.Println("4. Split")
+		}
+		input, _ := reader.ReadString('\n')
+		playerMove, err := strconv.Atoi(string(input[0]))
+		fmt.Println("You chose:", playerMove)
+		if err != nil || playerMove < 1 || playerMove > 4 {
+			fmt.Println("Invalid input. Please enter a number between 1 and 4.")
+			continue
+		}
+
+		switch playerMove {
+		case 1: // Hit
+			gs.ActionCalc(0b001) // Hit is always possible
+		case 2: // Stand
+			gs.ActionCalc(0b000) // Stand is always possible
+		case 3: // Double Down
 			if moves&0b010 != 0 {
-				fmt.Println("3. Double Down")
-			}						
-			if moves&0b100 != 0 {
-				fmt.Println("4. Split")
-			}
-			input, _ := reader.ReadString('\n')
-			playerMove, err := strconv.Atoi(string(input[0]))
-			fmt.Println("You chose:", playerMove)
-			if err != nil || playerMove < 1 || playerMove > 4 {
-				fmt.Println("Invalid input. Please enter a number between 1 and 4.")
+				gs.ActionCalc(0b010) 
+			} else {
+				fmt.Println("You cannot double down at this time.")
 				continue
 			}
+		case 4: // Split
+			if moves&0b100 != 0 {
+				gs.ActionCalc(0b100)
+			} else {
+				fmt.Println("You cannot split at this time.")
+				continue
+			}
+		default:
+			fmt.Println("Invalid move. Please choose a valid option.")
+		}
+		// --------------------------------------------
+		// ! END OF USER INPUT LOGIC
 
-			switch playerMove {
-			case 1: // Hit
-				gs.ActionCalc(0b001) // Hit is always possible
-			case 2: // Stand
-				gs.ActionCalc(0b000) // Stand is always possible
-			case 3: // Double Down
-				if moves&0b010 != 0 {
-					gs.ActionCalc(0b010) 
-				} else {
-					fmt.Println("You cannot double down at this time.")
-					continue
-				}
-			case 4: // Split
-				if moves&0b100 != 0 {
-					gs.ActionCalc(0b100)
-				} else {
-					fmt.Println("You cannot split at this time.")
-					continue
-				}
+		// after hand is done
+		if gs.HandToPlay > len(gs.PlayerHand) {
+			bjEndGame(gs) 
+		}
+		fmt.Println("Hand loop ended - restarting game loop...\n")
+	}
+}
+
+func bjEndGame(gs game.GameState) {
+	fmt.Println("Game is over")
+	// TODO: print dealer hand
+
+	// game is over
+	for i, hand := range gs.PlayerHand {
+		fmt.Printf("\n--- Hand %d ---", i+1)
+		game.PrintCards(hand)
+
+		// TODO: print hand
+		state := gs.State[i]
+		switch state {
+			case 2:
+				fmt.Printf(" Win")
+			case 3:
+				fmt.Printf(" Loss")
+			case 4:
+				fmt.Printf(" Draw")
+			case 5:
+				fmt.Printf(" Bust")
 			default:
-				fmt.Println("Invalid move. Please choose a valid option.")
-
-			// after hand is done
-			if gs.HandToPlay > len(gs.PlayerHand) {
-				fmt.Println("Game is over")
-				// TODO: print dealer hand
-
-				// game is over
-				for i, hand := range gs.PlayerHand {
-					fmt.Printf("\n--- Hand %d ---", i+1)
-					// TODO: print hand
-					state := gs.State[i]
-					switch state {
-						case 2:
-							fmt.Printf(" Win")
-						case 3:
-							fmt.Printf(" Loss")
-						case 4:
-							fmt.Printf(" Draw")
-						case 5:
-							fmt.Printf(" Bust")
-						default:
-							fmt.Println("ERROR state: ", state)
-					}
-				}
-
-				break 
-			}
-			fmt.Println("Would you like to play again? y or n")
-			input, _ := reader.ReadString('\n')
-			playerResp, err := strconv.Atoi(string(input[0]))
-			switch playerResp {
-			case 'y': 
-				continue // restart the same
-			case 'n':
-				break // break out of the loop
-			}
-			// TODO: what if response isn't recognised
-			
-			}
-			
+				fmt.Println("ERROR state: ", state)
 		}
 	}
-	fmt.Print("Player hands over, dealer's turn...\n")
-	}
+
 }
