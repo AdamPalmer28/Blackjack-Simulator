@@ -9,7 +9,10 @@ import (
 )
 
 func main() {
-	blackjackCLI()
+	for {
+			blackjackCLI()
+			fmt.Println("Function has ended!")
+	}
 
 }
 
@@ -35,7 +38,8 @@ func mainMenuCLI() {
 	}
 }
 
-func blackjackCLI() bool {
+func blackjackCLI() {
+	fmt.Println("=================================================")
 	fmt.Println("Welcome to the Blackjack CLI!")
 	fmt.Println("This is a simple command-line interface for playing Blackjack.")
 
@@ -43,7 +47,7 @@ func blackjackCLI() bool {
 	
 	gs := game.StartGame()// Initialize the game state
 	
-	for { // ! START OF HAND LOOP LOGIC
+	for { // ! START OF TURN LOOP LOGIC
 		// --------------------------------------------
 		gs.Print() // Display the initial game state
 		ind := gs.HandToPlay
@@ -96,36 +100,48 @@ func blackjackCLI() bool {
 		// ! END OF USER INPUT LOGIC
 
 		// after hand is done
-		if gs.HandToPlay > len(gs.PlayerHand) {
-			bjEndGame(gs) 
+		if gs.HandToPlay + 1 > len(gs.PlayerHand) {
+			bjEndGame(gs)
+			
+			// enter to continue
+			fmt.Println("Press Enter to return to the main menu...")
+			reader := bufio.NewReader(os.Stdin)
+			_, _ = reader.ReadString('\n')
+			return
 		}
-		fmt.Println("Hand loop ended - restarting game loop...\n")
+
+		fmt.Println("Turn loop ended - restarting game loop...\n")
 	}
 }
 
 func bjEndGame(gs game.GameState) {
-	fmt.Println("Game is over")
-	// TODO: print dealer hand
+	fmt.Println("\n\n-------------------------\nGame is over")
+	fmt.Println("Dealer hand (", gs.DealerScore, "):", game.PrintCards(gs.DealerHand))
+	fmt.Println("States: ", gs.State)
 
 	// game is over
 	for i, hand := range gs.PlayerHand {
 		fmt.Printf("\n--- Hand %d ---", i+1)
-		game.PrintCards(hand)
-
-		// TODO: print hand
+		
+		
 		state := gs.State[i]
 		switch state {
-			case 2:
-				fmt.Printf(" Win")
-			case 3:
-				fmt.Printf(" Loss")
-			case 4:
-				fmt.Printf(" Draw")
-			case 5:
-				fmt.Printf(" Bust")
-			default:
-				fmt.Println("ERROR state: ", state)
+		case 1:
+			fmt.Println("Win")
+		case 2:
+			fmt.Println("Loss")
+		case 3:
+			fmt.Println("Draw")
+		case 4:
+			fmt.Println("Bust")
+		default:
+			fmt.Println("ERROR state: ", state)
 		}
+		
+		fmt.Println(game.PrintCards(hand))
+		fmt.Println("Hand value: ", gs.HandValues[i])
+		fmt.Println("Score: ", gs.PlayerScore[i])
+		fmt.Println("\n")
 	}
 
 }

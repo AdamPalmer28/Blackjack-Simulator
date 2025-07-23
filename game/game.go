@@ -1,6 +1,7 @@
 package game
 
 import (
+	"fmt"
 	"strconv"
 )
 
@@ -8,12 +9,11 @@ type GameState struct {
 
 	// Game state
 	Deck  Deck
-	State []int // 0: player move, 1: dealer move, 2: player win, 3: dealer win, 4: draw, 5: player bust
-	Value []int // value of each hand - used for splitting / doubling down
+	State []int // 0: active game, 1: player win, 2: dealer win, 3: draw, 4: player bust
 	
 	HandToPlay int // player hand to play
 	PlayerMoves []int // legal moves for the player (hit, double down, split) - 0b000: no moves, 0b001: hit, 0b010: double down, 0b100: split
-	HandValues []int
+	HandValues []int  // value of each hand - used for splitting / doubling down
 
 	// Player's hand
 	PlayerHand  [][]Card // allow for splitting hands
@@ -50,28 +50,67 @@ func (gs *GameState) ActionCalc(playerMove int) {
 		active_turn = false
 		gs.HandValues[gs.HandToPlay] *= 2
 		gs.drawCard(gs.HandToPlay)
+		
+		// update score
+		gs.PlayerScore[gs.HandToPlay] = calculateScore(gs.PlayerHand[gs.HandToPlay])
+	
+		// Check if player has an Ace
+		gs.playerAce[gs.HandToPlay] = false
+		for _, card := range gs.PlayerHand[gs.HandToPlay] {
+			if card.Rank == 1 {
+				gs.playerAce[gs.HandToPlay] = true
+				break
+			}
+		}
 
 	} else if playerMove == 0b100 { // split
 		// Player splits their hand into two hands
 		// This will be handled in the next turn
 
-		// TODO:
+		// Split the current hand into two hands
+		hand := gs.PlayerHand[gs.HandToPlay]
+		if len(hand) != 2 || hand[0].Rank != hand[1].Rank {
+			panic("Error: Cannot split - hand does not have two cards of the same rank")
+		}
+
+		// Create two new hands, each with one of the split cards
+		newHand1 := []Card{hand[0], gs.Deck.Draw()}
+		newHand2 := []Card{hand[1], gs.Deck.Draw()}
+
+		// Replace the current hand with the first new hand
+		gs.PlayerHand[gs.HandToPlay] = newHand1
+		gs.PlayerHand = append(gs.PlayerHand, newHand2)
+
+		// Update HandValues for both hands
+		gs.HandValues = append(gs.HandValues, 1)
+
+		// playerScore for both hands
+		gs.PlayerScore[gs.HandToPlay] = calculateScore(newHand1)
+		gs.PlayerScore = append(gs.PlayerScore, calculateScore(newHand2))
+
+		// Update playerAce for both hands
+		gs.playerAce[gs.HandToPlay] = false
+		gs.playerAce = append(gs.playerAce, false)
+
+		// Update PlayerMoves for both hands
+		gs.PlayerMoves[gs.HandToPlay] = 0b001
+		gs.PlayerMoves = append(gs.PlayerMoves, 0b001)
 	} else {
 		panic("Error: Invalid player move: " + strconv.Itoa(playerMove))
 	}
 
 	// ----------- AFTER ACTION -----------
-
+	
 	// if legal moves go back to user...
-	if !active_turn {
+	if !active_turn || gs.PlayerScore[gs.HandToPlay] >= 21 {
 		gs.HandToPlay++
 		
-		if gs.HandToPlay + 1 >= len(gs.PlayerHand) {
+		if gs.HandToPlay + 1 > len(gs.PlayerHand) {
+			fmt.Println("endgame condition reached", gs.HandToPlay, len(gs.PlayerHand))
 			// All player hands have been played, now it's the dealer's turn
-			// TODO game_end
+			gs.endGame()
 			return
-		}	
-		
+		}
 	}
 	gs.UpdatePlayerState()
 	return // return back to the game loop
@@ -85,8 +124,10 @@ func StartGame() GameState {
 		Deck: newDeck(),
 		// State of play
 		HandToPlay: 0,
+		State:      make([]int, 0), // 0: active game, 1: player win, 2: dealer win, 3: draw, 4: player bust
+
 		PlayerMoves: make([]int, 0), // legal moves (hit, double down, split)
-		HandValues: make([]int, 1),
+		HandValues: make([]int, 0),
 
 		// Player Hands 
 		PlayerHand:  make([][]Card, 0), // Start with no player hands
@@ -98,7 +139,6 @@ func StartGame() GameState {
 		DealerScore:      0,
 		dealerShownScore: 0,
 		dealerAce:        false,
-		dealerShownAce:   false, // ? do I need this?
 	}
 
 	// Deal initial cards to player and dealer
@@ -107,9 +147,15 @@ func StartGame() GameState {
 	// update player states
 	gs.UpdatePlayerState()
 
-	// TODO
 	// calculate initial dealers state
-
+	gs.DealerScore = calculateScore(gs.DealerHand)
+	gs.dealerShownScore = gs.DealerHand[0].Rank // dealer's shown card score
+	for _, card := range gs.DealerHand {
+		if card.Rank == 1 {
+			gs.dealerAce = true // dealer has an Ace
+			break
+		}
+	}
 
 	return gs
 }
@@ -153,9 +199,56 @@ func (gs *GameState) UpdatePlayerState() {
 	gs.calcPlayMoves()
 }
 
+// ! runs once game is over
 func (gs *GameState) endGame() {
-	// TODO: runs once game is over
 	// Computes dealer hand/moves + final state computation
+
+	for (gs.DealerScore < 17) || (gs.dealerAce && gs.DealerScore >= 6) {
+		newCard := gs.Deck.Draw()
+		gs.DealerHand = append(gs.DealerHand, newCard)
+		gs.DealerScore = calculateScore(gs.DealerHand)
+		// Update dealerAce status
+		gs.dealerAce = false
+		if newCard.Rank == 1 {
+			gs.dealerAce = true
+		}
+	}
+
+	// ---- Final state calculation ----
+	dealerscore := gs.DealerScore
+	if gs.dealerAce && gs.DealerScore <= 11 {
+		dealerscore += 10 // Ace can be 1 or 11
+	}
+	for i, PlayerScore := range gs.PlayerScore {
+		fmt.Println(gs.State)
+		if gs.playerAce[i] && PlayerScore <= 11 {
+			PlayerScore += 10 // Ace can be 1 or 11
+		}
+		// Calculate final state for each player hand
+		switch {
+
+		case PlayerScore > 21:
+			gs.State = append(gs.State, 4) // Player bust
+			gs.HandValues[i] *= -1
+
+		case PlayerScore == dealerscore:
+			gs.State = append(gs.State, 3) // Draw
+			gs.HandValues[i] = 0 
+
+		case (PlayerScore > dealerscore) || (dealerscore > 21):
+			gs.State = append(gs.State, 1) // Player win
+			if gs.playerAce[i] && PlayerScore == 11 {
+				gs.HandValues[i] *= 2 // Blackjack bonus for player
+			} else {
+				gs.HandValues[i] *= 1 // Normal win
+			}
+
+		default:
+			gs.State = append(gs.State, 2) // Dealer win
+			gs.HandValues[i] *= -1 
+
+		}
+	}
 }
 
 // --------------------------
@@ -166,10 +259,16 @@ func (gs *GameState) dealInitialCards() {
 	// Deal two cards to the player
 
 	playerHand := make([]Card, 0)
-	for i := 0; i < 2; i++ {
-		playerHand = append(playerHand, gs.Deck.Draw())
-	}
+	// for i := 0; i < 2; i++ {
+	// 	playerHand = append(playerHand, gs.Deck.Draw())
+	// }
+	playerHand = append(playerHand,
+				Card{Suit: 0, Rank: 1},
+				Card{Suit: 1, Rank: 1},
+	)
+
 	gs.PlayerHand = append(gs.PlayerHand, playerHand)
+	gs.HandValues = append(gs.HandValues, 1)
 	// Deal two cards to the dealer
 	for i := 0; i < 2; i++ {
 		gs.DealerHand = append(gs.DealerHand, gs.Deck.Draw())
@@ -236,7 +335,7 @@ func (gs GameState) Print() {
 
 	}
 	println("")
-	println("Dealer (" + printScore(gs.DealerHand) + "):")
+	println("Dealer (" + strconv.Itoa(gs.dealerShownScore) + "):")
 	// only print the first card of the dealer's hand
 	println(gs.DealerHand[0].String(), " ?")
 
