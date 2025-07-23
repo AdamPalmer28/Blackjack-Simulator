@@ -2,6 +2,7 @@ package main
 
 import (
 	"blackjack/game"
+	"blackjack/sim"
 	"bufio"
 	"fmt"
 	"os"
@@ -9,10 +10,13 @@ import (
 )
 
 func main() {
-	for {
-			blackjackCLI()
-			fmt.Println("Function has ended!")
-	}
+	dataset := sim.CreateSimDataStructure() // create the simulation data structure
+	dataset.ToJSON()
+
+	// for {
+	// 		blackjackCLI()
+	// 		fmt.Println("Function has ended!")
+	// }
 
 }
 
