@@ -45,6 +45,19 @@ func (deck *Deck) Draw() Card {
 
 	return card
 }
+
+// Copy creates a deep copy of the Deck
+func (deck *Deck) Copy() Deck {
+	newDeck := Deck{
+		Drawn: deck.Drawn,
+	}
+	
+	// Copy the cards array
+	newDeck.Cards = deck.Cards // This creates a copy since Cards is an array, not a slice
+	
+	return newDeck
+}
+
 // shuffle the order of the cards in the deck
 func (deck *Deck) shuffle() {
 

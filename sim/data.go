@@ -14,23 +14,12 @@ import (
 	"os"
 )
 
-// individual simulation data piece
-type SimEvalData struct {
-	DealerScore  int
-	PlayerScores int
-	PlayerAce bool
-	ChoosenAction int // 0: hit, 1: stand, 2: double down, 3: split
-	Value int // resulting value of the action
-}
-
-
-
 // Complete structure for simulation data
 // made from many SimData
 type SimData struct {
-	// DealerScore  int // dealer score
+	// DealerScore  int // dealer shown score
 	// PlayerScores int // player score
-	// PlayerAce bool // true if player has an Ace in their hand
+	// PlayerOptions int // 0: no ace, 1: has ace, 2: split
 	// ChosenAction int // 0: hit, 1: stand, 2: double down, 3: split
 	ExpectedValue int // resulting value of the action
 	Trials int // number of trials for this data set
@@ -43,15 +32,24 @@ type SimDataMap map[int]map[int]map[int]map[int]SimData
 func CreateSimDataStructure() SimDataMap {
 	ds := make(map[int]map[int]map[int]map[int]SimData)
 
-	for i := 2; i <= 20; i++ { // dealer score
+	for i := 1; i <= 10; i++ { // dealer shown score
 		for j := 2; j <= 20; j++ { // player score
 
-			limit := 1
-			if j < 12 { // ace doesn't matter for player scores above 11
-				limit = 2
+			loopList := []int{0}
+			if j < 12 && j > 2{
+				loopList = append(loopList, 1)
 			}
-			for k := 0; k < limit; k++ { // player ace boolean
-				for l := 0; l < 4; l++ { // actions [hit, stand, double down, split]
+			if j%2 == 0 {
+				loopList = append(loopList, 2)
+			}
+			for _, k := range loopList { // player ace boolean
+
+				player_options := 3
+				if k == 2 {
+					player_options = 4
+				}
+
+				for l := 0; l < player_options; l++ { // actions [hit, stand, double down, split]
 					// Initialize the data structure with zero values
 					simData := SimData{
 						ExpectedValue: 0,
@@ -78,6 +76,25 @@ func CreateSimDataStructure() SimDataMap {
 	return ds
 }
 
+func (sdm SimDataMap) AddData(data SimState) {
+	// add data to the simulation data structure
+	for _, d := range data.SimEvalData {
+		dealerScore := d.DealerScore
+		playerScore := d.PlayerScores
+		playerHandCat := d.PlayerHandCats
+		chosenAction := d.ChoosenAction
+
+		// update the expected value and trials
+		simData := sdm[dealerScore][playerScore][playerHandCat][chosenAction]
+		simData.ExpectedValue = (simData.ExpectedValue*simData.Trials + d.Value) / (simData.Trials + 1)
+		simData.Trials++
+		sdm[dealerScore][playerScore][playerHandCat][chosenAction] = simData
+	}
+}
+
+
+// ----------------------------------------------------------------------------
+
 // SimDataMap to JSON "bj_sim_data.json"
 func (sdm SimDataMap) ToJSON() ([]byte, error) {
 	
@@ -93,4 +110,18 @@ func (sdm SimDataMap) ToJSON() ([]byte, error) {
 	}
 
 	return data, nil
+}
+
+// load data from JSON file to SimDataMap
+func LoadFromJSON(filename string) (SimDataMap, error) {
+	file, err := os.ReadFile(filename)
+	if err != nil {	
+		return nil, err
+	}
+	var sdm SimDataMap
+	err = json.Unmarshal(file, &sdm)
+	if err != nil {
+		return nil, err
+	}
+	return sdm, nil
 }

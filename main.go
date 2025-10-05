@@ -9,10 +9,22 @@ import (
 	"strconv"
 )
 
+// dataset := sim.CreateSimDataStructure() // create the simulation data structure
+// dataset.ToJSON()
 func main() {
-	dataset := sim.CreateSimDataStructure() // create the simulation data structure
-	dataset.ToJSON()
 
+	fmt.Println("Welcome to the Blackjack Simulator!")
+
+	dataset, _ := sim.LoadFromJSON("bj_sim_data.json")
+	
+
+	fmt.Println("Beginning simulating bj hands...")
+
+	sim.SimulateBJ(10, dataset) // run 100,000 simulations and save to dataset
+
+
+
+	// cli menu for blackjack
 	// for {
 	// 		blackjackCLI()
 	// 		fmt.Println("Function has ended!")

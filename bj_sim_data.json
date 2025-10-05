@@ -1,13 +1,257 @@
 {
+	"1": {
+		"10": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"11": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"12": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"13": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"14": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"15": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"16": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"17": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"18": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"19": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"2": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"20": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"3": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"4": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"5": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"6": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"7": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"8": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 },
+				"3": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		},
+		"9": {
+			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			}
+		}
+	},
 	"10": {
 		"10": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -18,18 +262,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -40,12 +287,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -56,12 +307,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -72,12 +327,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -88,18 +347,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -110,218 +367,9 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"11": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -332,24 +380,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -360,24 +410,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -388,24 +440,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -416,1726 +470,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"12": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"13": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"14": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"15": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"16": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"17": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"18": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"19": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -2144,10 +484,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2158,18 +502,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2180,12 +527,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2196,12 +547,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2212,12 +567,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2228,18 +587,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2250,218 +607,9 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"3": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"4": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"5": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"6": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"7": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"8": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"9": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		}
-	},
-	"20": {
-		"10": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"11": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"12": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"13": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"14": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"15": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"16": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"17": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"18": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"19": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"2": {
-			"0": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			},
-			"1": {
-				"0": { "ExpectedValue": 0, "Trials": 0 },
-				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
-			}
-		},
-		"20": {
-			"0": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2472,24 +620,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2500,24 +650,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2528,24 +680,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2556,14 +710,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -2572,10 +724,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2586,18 +742,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2608,12 +767,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2624,12 +787,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2640,12 +807,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2656,18 +827,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2678,6 +847,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -2686,24 +860,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2714,24 +890,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2742,24 +920,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2770,14 +950,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -2786,10 +964,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2800,18 +982,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2822,12 +1007,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2838,12 +1027,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2854,12 +1047,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2870,18 +1067,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2892,6 +1087,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -2900,24 +1100,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2928,24 +1130,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2956,24 +1160,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -2984,14 +1190,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -3000,10 +1204,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3014,18 +1222,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3036,12 +1247,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3052,12 +1267,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3068,12 +1287,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3084,18 +1307,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3106,6 +1327,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -3114,24 +1340,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3142,24 +1370,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3170,24 +1400,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3198,14 +1430,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -3214,10 +1444,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3228,18 +1462,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3250,12 +1487,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3266,12 +1507,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3282,12 +1527,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3298,18 +1547,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3320,6 +1567,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -3328,24 +1580,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3356,24 +1610,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3384,24 +1640,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3412,14 +1670,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -3428,10 +1684,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3442,18 +1702,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3464,12 +1727,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3480,12 +1747,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3496,12 +1767,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3512,18 +1787,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3534,6 +1807,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -3542,24 +1820,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3570,24 +1850,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3598,24 +1880,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3626,14 +1910,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -3642,10 +1924,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3656,18 +1942,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3678,12 +1967,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3694,12 +1987,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3710,12 +2007,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3726,18 +2027,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3748,6 +2047,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -3756,24 +2060,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3784,24 +2090,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3812,24 +2120,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3840,14 +2150,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	},
@@ -3856,10 +2164,14 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3870,18 +2182,21 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"12": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3892,12 +2207,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"14": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3908,12 +2227,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"16": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3924,12 +2247,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"18": {
 			"0": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3940,18 +2267,16 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"2": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
-			"1": {
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3962,6 +2287,11 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
 				"3": { "ExpectedValue": 0, "Trials": 0 }
 			}
@@ -3970,24 +2300,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"4": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -3998,24 +2330,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"6": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -4026,24 +2360,26 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		},
 		"8": {
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
+				"0": { "ExpectedValue": 0, "Trials": 0 },
+				"1": { "ExpectedValue": 0, "Trials": 0 },
+				"2": { "ExpectedValue": 0, "Trials": 0 }
+			},
+			"2": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
 				"2": { "ExpectedValue": 0, "Trials": 0 },
@@ -4054,14 +2390,12 @@
 			"0": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			},
 			"1": {
 				"0": { "ExpectedValue": 0, "Trials": 0 },
 				"1": { "ExpectedValue": 0, "Trials": 0 },
-				"2": { "ExpectedValue": 0, "Trials": 0 },
-				"3": { "ExpectedValue": 0, "Trials": 0 }
+				"2": { "ExpectedValue": 0, "Trials": 0 }
 			}
 		}
 	}

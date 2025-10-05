@@ -1,7 +1,6 @@
 package game
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -23,10 +22,10 @@ type GameState struct {
 
 	// Dealer's hand
 	DealerHand       []Card
-	dealerShownScore int  // score of the dealer's shown card
+	DealerShownScore int  // score of the dealer's shown card
 	dealerShownAce   bool // true if dealer's shown card is an Ace
 
-	dealerAce   bool // true if dealer has an Ace in their hand
+	dealerAce   bool // true if dealeír has an Ace in their hand
 	DealerScore int
 }
 
@@ -106,7 +105,7 @@ func (gs *GameState) ActionCalc(playerMove int) {
 		gs.HandToPlay++
 		
 		if gs.HandToPlay + 1 > len(gs.PlayerHand) {
-			fmt.Println("endgame condition reached", gs.HandToPlay, len(gs.PlayerHand))
+			//fmt.Println("endgame condition reached", gs.HandToPlay, len(gs.PlayerHand))
 			// All player hands have been played, now it's the dealer's turn
 			gs.endGame()
 			return
@@ -137,7 +136,7 @@ func StartGame() GameState {
 		// Dealer Hands
 		DealerHand:       make([]Card, 0),
 		DealerScore:      0,
-		dealerShownScore: 0,
+		DealerShownScore: 0,
 		dealerAce:        false,
 	}
 
@@ -149,7 +148,7 @@ func StartGame() GameState {
 
 	// calculate initial dealers state
 	gs.DealerScore = calculateScore(gs.DealerHand)
-	gs.dealerShownScore = gs.DealerHand[0].Rank // dealer's shown card score
+	gs.DealerShownScore = gs.DealerHand[0].Rank // dealer's shown card score
 	for _, card := range gs.DealerHand {
 		if card.Rank == 1 {
 			gs.dealerAce = true // dealer has an Ace
@@ -220,9 +219,10 @@ func (gs *GameState) endGame() {
 		dealerscore += 10 // Ace can be 1 or 11
 	}
 	for i, PlayerScore := range gs.PlayerScore {
-		fmt.Println(gs.State)
+
 		if gs.playerAce[i] && PlayerScore <= 11 {
 			PlayerScore += 10 // Ace can be 1 or 11
+			gs.PlayerScore[i] = PlayerScore
 		}
 		// Calculate final state for each player hand
 		switch {
@@ -259,13 +259,13 @@ func (gs *GameState) dealInitialCards() {
 	// Deal two cards to the player
 
 	playerHand := make([]Card, 0)
-	// for i := 0; i < 2; i++ {
-	// 	playerHand = append(playerHand, gs.Deck.Draw())
-	// }
-	playerHand = append(playerHand,
-				Card{Suit: 0, Rank: 1},
-				Card{Suit: 1, Rank: 1},
-	)
+	for i := 0; i < 2; i++ {
+		playerHand = append(playerHand, gs.Deck.Draw())
+	}
+	// playerHand = append(playerHand,
+	// 			Card{Suit: 0, Rank: 1},
+	// 			Card{Suit: 1, Rank: 1},
+	// )
 
 	gs.PlayerHand = append(gs.PlayerHand, playerHand)
 	gs.HandValues = append(gs.HandValues, 1)
@@ -304,6 +304,69 @@ func calculateScore(hand []Card) int {
 
 
 // ============================================================================
+// COPY FUNCTIONS
+
+// Copy creates a deep copy of the GameState
+func (gs *GameState) Copy() GameState {
+	newGs := GameState{
+		// Copy the deck
+		Deck: gs.Deck.Copy(),
+		
+		// Copy simple fields
+		HandToPlay: gs.HandToPlay,
+		DealerScore: gs.DealerScore,
+		DealerShownScore: gs.DealerShownScore,
+		dealerShownAce: gs.dealerShownAce,
+		dealerAce: gs.dealerAce,
+	}
+	
+	// Copy slices - need to make new slices to avoid sharing memory
+	if gs.State != nil {
+		newGs.State = make([]int, len(gs.State))
+		copy(newGs.State, gs.State)
+	}
+	
+	if gs.PlayerMoves != nil {
+		newGs.PlayerMoves = make([]int, len(gs.PlayerMoves))
+		copy(newGs.PlayerMoves, gs.PlayerMoves)
+	}
+	
+	if gs.HandValues != nil {
+		newGs.HandValues = make([]int, len(gs.HandValues))
+		copy(newGs.HandValues, gs.HandValues)
+	}
+	
+	if gs.PlayerScore != nil {
+		newGs.PlayerScore = make([]int, len(gs.PlayerScore))
+		copy(newGs.PlayerScore, gs.PlayerScore)
+	}
+	
+	if gs.playerAce != nil {
+		newGs.playerAce = make([]bool, len(gs.playerAce))
+		copy(newGs.playerAce, gs.playerAce)
+	}
+	
+	// Copy nested slices (PlayerHand is [][]Card)
+	if gs.PlayerHand != nil {
+		newGs.PlayerHand = make([][]Card, len(gs.PlayerHand))
+		for i, hand := range gs.PlayerHand {
+			if hand != nil {
+				newGs.PlayerHand[i] = make([]Card, len(hand))
+				copy(newGs.PlayerHand[i], hand)
+			}
+		}
+	}
+	
+	// Copy dealer hand
+	if gs.DealerHand != nil {
+		newGs.DealerHand = make([]Card, len(gs.DealerHand))
+		copy(newGs.DealerHand, gs.DealerHand)
+	}
+	
+	return newGs
+}
+
+// ============================================================================
 // HELPER FUNCTIONS
 
 func printScore(hand []Card) string {
@@ -335,7 +398,7 @@ func (gs GameState) Print() {
 
 	}
 	println("")
-	println("Dealer (" + strconv.Itoa(gs.dealerShownScore) + "):")
+	println("Dealer (" + strconv.Itoa(gs.DealerShownScore) + "):")
 	// only print the first card of the dealer's hand
 	println(gs.DealerHand[0].String(), " ?")
 
