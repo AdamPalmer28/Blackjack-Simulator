@@ -100,6 +100,8 @@ func (gs *GameState) ActionCalc(playerMove int) {
 
 	// ----------- AFTER ACTION -----------
 	
+	// update score
+	gs.PlayerScore[gs.HandToPlay] = calculateScore(gs.PlayerHand[gs.HandToPlay])
 	// if legal moves go back to user...
 	if !active_turn || gs.PlayerScore[gs.HandToPlay] >= 21 {
 		gs.HandToPlay++

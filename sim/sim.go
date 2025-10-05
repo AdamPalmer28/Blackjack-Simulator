@@ -38,13 +38,13 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 			}
 		}
 
-		fmt.Println("Adding data to simulation data structure...")
-		dataset.AddData(recentSimStates)
+		// fmt.Println("Adding data to simulation data structure...")
+		// dataset.AddData(recentSimStates)
 
-		fmt.Println("Saving simulation data to bj_sim_data.json...")
-		dataset.ToJSON()
+		// fmt.Println("Saving simulation data to bj_sim_data.json...")
+		// dataset.ToJSON()
 		
-		if i == 0 { // ! remove later - just for testing
+		if i == 1 { // ! remove later - just for testing
 			return
 		}
 	}
@@ -64,51 +64,60 @@ func single_player_sim() SimState {
 	// Start recursive exploration from initial game state
 	node_explore(gs, &simState)
 	
+	fmt.Println("Simulation complete.")
 	return simState
 }
 
-// ! NEED TO REDO THIS ENTIRE FUNCTION WITHOUT USING AI...
-func node_explore(gs game.GameState, simState *SimState) {
-	// for any given hand state, explore all possible actions recursively
-	
-	// Check if game is f
-	// inished (all hands played)
-	if gs.HandToPlay >= len(gs.PlayerHand) {
-		// Game is over, record final results
-		for i := 0; i < len(gs.State); i++ {
-			simData := SimEvalData{
-				DealerStart:    gs.DealerShownScore,
-				DealerScore:    gs.DealerScore,
-				PlayerScores:   gs.PlayerScore[i],
-				PlayerHandCats: getHandCategory(gs.PlayerHand[i]),
-				ChoosenAction:  -1, // Final state, no action chosen
-				Value:         gs.HandValues[i],
-			}
-			simState.SimEvalData = append(simState.SimEvalData, simData)
-		}
-		return gs.HandValues[i]
-	}
 
+// Try all possible actions for current hand
+// Stand (action 0) - always available
+var PlayerActions = []struct {
+	actionInt   int // 0: Stand, 1: Hit, 2: Double Down, 3: Split
+	actionMask   int
+}{
+	{0, 0b000}, // Stand
+	{1, 0b001}, // Hit
+	{2, 0b010}, // Double Down
+	{3, 0b100}, // Split
+}
+
+// ! I have rewritten this but not working properly...
+func node_explore(gs game.GameState, simState *SimState) (value int) {
+	// for any given hand state, explore all possible actions recursively
+	// returns the value of the final outcome...
+
+	if gs.HandToPlay >= len(gs.PlayerHand) {
+		// Game over for this hand, evaluate outcome
+		
+		// debuging msg - print dealer score, player scores, and states
+		fmt.Printf("END GAME: Dealer Score: %d", gs.DealerScore)
+		for i, v := range gs.PlayerScore {
+			fmt.Printf("  Player %d Score: %d", i, v)
+			fmt.Printf("  Player %d State: %d\n\n", i, gs.State[i])
+		}
+
+		total := 0
+		for _, v := range gs.HandValues {
+			total += v
+		}
+		return total
+		
+	}
+	
 	// Get current hand's legal moves
 	currentHandMoves := gs.PlayerMoves[gs.HandToPlay]
-	
-	// Try all possible actions for current hand
-	// Stand (action 0) - always available
-	actions := []struct {
-		actionInt   int // 0: Stand, 1: Hit, 2: Double Down, 3: Split
-		actionMask   int
-	}{
-		{0, 0b000}, // Stand
-		{1, 0b001}, // Hit
-		{2, 0b010}, // Double Down
-		{3, 0b100}, // Split
-	}
 
-	for _, action := range actions {
+	actions_vals := make(map[int]int)
+	for i, action := range PlayerActions {
 
 		if (action.actionMask&currentHandMoves != 0) || action.actionInt == 0 { // Stand is always possible
 			gsCopy := (&gs).Copy()
+			fmt.Println("Action: ", action.actionInt,  "Current player score: ", gsCopy.PlayerScore[gs.HandToPlay])
 			gsCopy.ActionCalc(action.actionMask)
+			fmt.Println("After action player score: ", gsCopy.PlayerScore[gs.HandToPlay])
+
+			// Continue exploring from this state
+			value = node_explore(gsCopy, simState)
 
 			simData := SimEvalData{
 				DealerStart:    gs.DealerShownScore,
@@ -116,15 +125,37 @@ func node_explore(gs game.GameState, simState *SimState) {
 				PlayerScores:   gs.PlayerScore[gs.HandToPlay],
 				PlayerHandCats: getHandCategory(gs.PlayerHand[gs.HandToPlay]),
 				ChoosenAction:  action.actionInt,
-				Value:          0,  // Will be updated when game finishes
+				Value:          value,  // Will be updated when game finishes
 			}
 			simState.SimEvalData = append(simState.SimEvalData, simData)
 
-			// Continue exploring from this state
-			node_explore(gsCopy, simState)
+		} else {
+			// Action not possible, skip
+			value = -100
 		}
+		actions_vals[i] = value
 	}
 
+	// -----------------------------------
+	// Determine value to return
+
+	n_acts, sum_val := 0, 0
+	// Determine realistic values
+	for act, val := range actions_vals {
+		if val == -100 {
+			continue //
+		}
+		if gs.PlayerScore[gs.HandToPlay] > 14 {
+			// pass
+			act = act + 1
+			// ! later we may want to account for act probabilities
+			// ? currently there is a bias of downstream actions being random...
+			// e.g. if score > 14 then use best strategy if score <= 14 loop through all actions
+		}
+		n_acts++
+		sum_val += val
+	}
+	return sum_val / n_acts
 }
 
 // Helper function to categorize player hand
