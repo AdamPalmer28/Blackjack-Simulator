@@ -21,7 +21,7 @@ type SimData struct {
 	// PlayerScores int // player score
 	// PlayerOptions int // 0: no ace, 1: has ace, 2: split
 	// ChosenAction int // 0: hit, 1: stand, 2: double down, 3: split
-	ExpectedValue int // resulting value of the action
+	ExpectedValue float32 // resulting value of the action
 	Trials int // number of trials for this data set
 }
 
@@ -86,7 +86,7 @@ func (sdm SimDataMap) AddData(data SimState) {
 
 		// update the expected value and trials
 		simData := sdm[dealerScore][playerScore][playerHandCat][chosenAction]
-		simData.ExpectedValue = (simData.ExpectedValue*simData.Trials + d.Value) / (simData.Trials + 1)
+		simData.ExpectedValue = float32((simData.ExpectedValue*float32(simData.Trials) + float32(d.Value)) / float32(simData.Trials+1))
 		simData.Trials++
 		sdm[dealerScore][playerScore][playerHandCat][chosenAction] = simData
 	}

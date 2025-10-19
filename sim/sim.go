@@ -12,13 +12,16 @@ type SimEvalData struct {
 	PlayerScores  int
 	PlayerHandCats int // 0: no ace, 1: has ace, 2: split available
 	ChoosenAction int // 0: hit, 1: stand, 2: double down, 3: split
-	Value int // resulting value of the action
+	Value float32 // resulting value of the action
 	Depth int // depth of the action in the game tree (for debugging)
 }
 
 type SimState struct {
 	SimEvalData []SimEvalData // list of all simulation data
 }
+
+var debugMode = true
+
 
 func SimulateBJ(hands int, dataset SimDataMap) {
 	// run many simulations of the game
@@ -30,14 +33,16 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 		fmt.Println("Simulated", i, "hands...")
 
 		//print recentSimStates for debugging
+		if debugMode {
 		for _, d := range recentSimStates.SimEvalData {
-			fmt.Printf("DealerShownScore: %d, DealerScore: %d, PlayerScores: %d, PlayerHandCats: %d, ChoosenAction: %d, Value: %d\n",
+			fmt.Printf("DSS: %d, DS: %d, S: %d, cat: %d, Act: %d, V: %f\n",
 				d.DealerStart, d.DealerScore, d.PlayerScores, d.PlayerHandCats, d.ChoosenAction, d.Value)
-			if d.ChoosenAction == -1 {
-				println("")
+				if d.ChoosenAction == -1 {
+					println("")
+				}
 			}
 		}
-
+			
 		// fmt.Println("Adding data to simulation data structure...")
 		// dataset.AddData(recentSimStates)
 
@@ -82,23 +87,28 @@ var PlayerActions = []struct {
 }
 
 // ! I have rewritten this but not working properly...
-func node_explore(gs game.GameState, simState *SimState) (value int) {
+func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// for any given hand state, explore all possible actions recursively
 	// returns the value of the final outcome...
 
 	if gs.HandToPlay >= len(gs.PlayerHand) {
-		// Game over for this hand, evaluate outcome
+		// !GAME OVER
+		// for this hand, evaluate outcome
 		
-		// debuging msg - print dealer score, player scores, and states
-		fmt.Printf("END GAME: Dealer Score: %d", gs.DealerScore)
-		for i, v := range gs.PlayerScore {
-			fmt.Printf("  Player %d Score: %d", i, v)
-			fmt.Printf("  Player %d State: %d\n\n", i, gs.State[i])
+		if debugMode {
+			fmt.Printf("END GAME: DS: %d", gs.DealerScore)
+			for i, v := range gs.PlayerScore {
+				fmt.Printf("  P %d S: %d", i, v)
+				fmt.Printf("  State: %d\n", gs.State[i])
+			}
 		}
+		total := float32(0)
 
-		total := 0
-		for _, v := range gs.HandValues {
-			total += v
+		for ind, v := range gs.HandValues {
+			if debugMode {
+				fmt.Printf("V%d: %d \n\n", ind, v)
+			}
+			total += float32(v)
 		}
 		return total
 		
@@ -107,14 +117,23 @@ func node_explore(gs game.GameState, simState *SimState) (value int) {
 	// Get current hand's legal moves
 	currentHandMoves := gs.PlayerMoves[gs.HandToPlay]
 
-	actions_vals := make(map[int]int)
+	// ! MAIN LOOP
+	fmt.Println(len(simState.SimEvalData))
+	simStateInd := len(simState.SimEvalData)-1 // position of current sim data - used to update value after game loop
+	actions_vals := make(map[int]float32) // map of action index to value
 	for i, action := range PlayerActions {
+		// do all actions...
 
 		if (action.actionMask&currentHandMoves != 0) || action.actionInt == 0 { // Stand is always possible
 			gsCopy := (&gs).Copy()
-			fmt.Println("Action: ", action.actionInt,  "Current player score: ", gsCopy.PlayerScore[gs.HandToPlay])
+			if debugMode {
+				fmt.Printf("Act: %d || S: %d", action.actionInt, gsCopy.PlayerScore[gs.HandToPlay])
+			}
 			gsCopy.ActionCalc(action.actionMask)
-			fmt.Println("After action player score: ", gsCopy.PlayerScore[gs.HandToPlay])
+
+			if debugMode {
+				fmt.Printf(" || Post S: %d\n", gsCopy.PlayerScore[gs.HandToPlay])
+			}
 
 			// Continue exploring from this state
 			value = node_explore(gsCopy, simState)
@@ -135,11 +154,14 @@ func node_explore(gs game.GameState, simState *SimState) (value int) {
 		}
 		actions_vals[i] = value
 	}
-
-	// -----------------------------------
+	if debugMode {
+		fmt.Printf("<> FIN All Act  %d\n", gs.PlayerScore[gs.HandToPlay])
+	}
+	// ----------------------------------
 	// Determine value to return
+	// ! FUNCTION EXIT - if game not over
 
-	n_acts, sum_val := 0, 0
+	n_acts, sum_val := 0, float32(0)
 	// Determine realistic values
 	for act, val := range actions_vals {
 		if val == -100 {
@@ -155,7 +177,16 @@ func node_explore(gs game.GameState, simState *SimState) (value int) {
 		n_acts++
 		sum_val += val
 	}
-	return sum_val / n_acts
+	if debugMode {
+		fmt.Printf("returned V: %d / %d = %f\n\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
+	}
+
+	
+	// ! update simulation data with final value
+	final_val := float32(sum_val) / float32(n_acts)
+	simState.SimEvalData[simStateInd].Value = final_val
+	fmt.Printf("FINAL VAL SET TO: %f %f\n", final_val, simState.SimEvalData[simStateInd].Value)
+	return final_val
 }
 
 // Helper function to categorize player hand
