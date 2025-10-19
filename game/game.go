@@ -270,7 +270,7 @@ func (gs *GameState) dealInitialCards() {
 	// )
 
 	gs.PlayerHand = append(gs.PlayerHand, playerHand)
-	gs.HandValues = append(gs.HandValues, 1)
+	//gs.HandValues = append(gs.HandValues, 1) // ? bug - done in structure
 	// Deal two cards to the dealer
 	for i := 0; i < 2; i++ {
 		gs.DealerHand = append(gs.DealerHand, gs.Deck.Draw())
