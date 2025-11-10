@@ -92,7 +92,7 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// returns the value of the final outcome...
 
 	if gs.HandToPlay >= len(gs.PlayerHand) {
-		// !GAME OVER
+		// !GAME OVER - will exit here
 		// for this hand, evaluate outcome
 		
 		if debugMode {
@@ -113,13 +113,11 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 		return total
 		
 	}
-	
 	// Get current hand's legal moves
 	currentHandMoves := gs.PlayerMoves[gs.HandToPlay]
 
 	// ! MAIN LOOP
-	fmt.Println(len(simState.SimEvalData))
-	simStateInd := len(simState.SimEvalData)-1 // position of current sim data - used to update value after game loop
+	fmt.Println("new loop  ",len(simState.SimEvalData))
 	actions_vals := make(map[int]float32) // map of action index to value
 	for i, action := range PlayerActions {
 		// do all actions...
@@ -162,30 +160,30 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// ! FUNCTION EXIT - if game not over
 
 	n_acts, sum_val := 0, float32(0)
-	// Determine realistic values
+
+	// Determine returned score
+	//     currently this is just mean...
 	for act, val := range actions_vals {
 		if val == -100 {
 			continue //
 		}
 		if gs.PlayerScore[gs.HandToPlay] > 14 {
 			// pass
-			act = act + 1
-			// ! later we may want to account for act probabilities
+			act = act + 1 // dummy operation
+			// ! TODO - we may want to account for act probabilities
 			// ? currently there is a bias of downstream actions being random...
 			// e.g. if score > 14 then use best strategy if score <= 14 loop through all actions
 		}
 		n_acts++
 		sum_val += val
 	}
+	final_val := float32(sum_val) / float32(n_acts)
+
 	if debugMode {
-		fmt.Printf("returned V: %d / %d = %f\n\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
+		fmt.Printf("returned V: %f / %d = %f\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
 	}
 
-	
-	// ! update simulation data with final value
-	final_val := float32(sum_val) / float32(n_acts)
-	simState.SimEvalData[simStateInd].Value = final_val
-	fmt.Printf("FINAL VAL SET TO: %f %f\n", final_val, simState.SimEvalData[simStateInd].Value)
+
 	return final_val
 }
 
