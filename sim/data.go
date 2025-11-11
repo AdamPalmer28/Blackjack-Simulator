@@ -79,30 +79,31 @@ func CreateSimDataStructure() SimDataMap {
 func (sdm SimDataMap) AddData(data SimState) {
 	// add data to the simulation data structure
 	for _, d := range data.SimEvalData {
-		dealerScore := d.DealerStart
+		dealerStart := d.DealerStart
 		playerScore := d.PlayerScores
 		playerHandCat := d.PlayerHandCats
 		chosenAction := d.ChoosenAction
 
 		// update the expected value and trials
-		simData := sdm[dealerScore][playerScore][playerHandCat][chosenAction]
+		simData := sdm[dealerStart][playerScore][playerHandCat][chosenAction]
 		simData.ExpectedValue = float32((simData.ExpectedValue*float32(simData.Trials) + float32(d.Value)) / float32(simData.Trials+1))
 		simData.Trials++
 
-		//fmt.Println("Adding data: DSS:", dealerScore, " PS:", playerScore, " cat:", playerHandCat, " Act:", chosenAction, " V:", d.Value)
-		if _, ok := sdm[dealerScore]; !ok {
-			fmt.Printf("Error: Dealer score %d not found in SimDataMap\n", dealerScore)
+		// ! debug, remove later
+		//fmt.Println("Adding data: DSS:", dealerStart, " PS:", playerScore, " cat:", playerHandCat, " Act:", chosenAction, " V:", d.Value)
+		if _, ok := sdm[dealerStart]; !ok {
+			fmt.Printf("Error: Dealer score %d not found in SimDataMap\n", dealerStart)
 			continue
 		}
-		if _, ok := sdm[dealerScore][playerScore]; !ok {
-			fmt.Printf("Error: Player score %d not found for dealer score %d in SimDataMap\n", playerScore, dealerScore)
+		if _, ok := sdm[dealerStart][playerScore]; !ok {
+			fmt.Printf("Error: Player score %d not found for dealer score %d in SimDataMap\n", playerScore, dealerStart)
 			continue
 		}
-		if _, ok := sdm[dealerScore][playerScore][playerHandCat]; !ok {
-			fmt.Printf("Error: Player hand category %d not found for dealer score %d and player score %d in SimDataMap\n", playerHandCat, dealerScore, playerScore)
+		if _, ok := sdm[dealerStart][playerScore][playerHandCat]; !ok {
+			fmt.Printf("Error: Player hand category %d not found for dealer score %d and player score %d in SimDataMap\n", playerHandCat, dealerStart, playerScore)
 			continue
 		}
-		sdm[dealerScore][playerScore][playerHandCat][chosenAction] = simData
+		sdm[dealerStart][playerScore][playerHandCat][chosenAction] = simData
 	}
 }
 

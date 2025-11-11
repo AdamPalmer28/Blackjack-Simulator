@@ -69,6 +69,7 @@ func (gs *GameState) ActionCalc(playerMove int) {
 		// Split the current hand into two hands
 		hand := gs.PlayerHand[gs.HandToPlay]
 		if len(hand) != 2 || hand[0].Rank != hand[1].Rank {
+			gs.Print()
 			panic("Error: Cannot split - hand does not have two cards of the same rank")
 		}
 
@@ -149,8 +150,14 @@ func StartGame() GameState {
 	gs.UpdatePlayerState()
 
 	// calculate initial dealers state
-	gs.DealerScore = calculateScore(gs.DealerHand)
-	gs.DealerShownScore = gs.DealerHand[0].Rank // dealer's shown card score
+	gs.DealerScore = calculateScore(gs.DealerHand) 
+
+	rank := gs.DealerHand[0].Rank
+	if rank > 10 {
+		rank = 10
+	}
+	gs.DealerShownScore = rank
+	
 	for _, card := range gs.DealerHand {
 		if card.Rank == 1 {
 			gs.dealerAce = true // dealer has an Ace

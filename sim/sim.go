@@ -207,8 +207,8 @@ func getHandCategory(hand []game.Card) int {
 		}
 		rank_sum += card.Rank
 	}
-	
-	// Check if split is available (two cards of same rank)
+	# ! I think this is broken ...
+	// Check if split is available (two cards of same rank) 
 	if len(hand) == 2 && hand[0].Rank == hand[1].Rank {
 		canSplit = true
 	}

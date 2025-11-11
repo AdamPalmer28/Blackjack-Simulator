@@ -20,12 +20,11 @@ func newDeck() Deck {
 	// make a new deck of cards
 	var deck Deck
 
-
-	for suit := 0; suit < 4; suit++ {
-		for rank := 1; rank <= 13; rank++ {
-			deck.Cards[suit*13+rank-1] = Card{Suit: suit, Rank: rank}
+		for suit := 0; suit < 4; suit++ {
+			for rank := 1; rank <= 13; rank++ {
+				deck.Cards[suit*13+rank-1] = Card{Suit: suit, Rank: rank}
+			}
 		}
-	}
 
 	// shuffle the deck
 	deck.shuffle()
