@@ -23,7 +23,7 @@ func main() {
 
 	fmt.Println("Beginning simulating bj hands...")
 
-	sim.SimulateBJ(10, dataset) // run 100,000 simulations and save to dataset
+	sim.SimulateBJ(1000, dataset) // run 100,000 simulations and save to dataset
 
 
 

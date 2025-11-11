@@ -79,7 +79,7 @@ func CreateSimDataStructure() SimDataMap {
 func (sdm SimDataMap) AddData(data SimState) {
 	// add data to the simulation data structure
 	for _, d := range data.SimEvalData {
-		dealerScore := d.DealerScore
+		dealerScore := d.DealerStart
 		playerScore := d.PlayerScores
 		playerHandCat := d.PlayerHandCats
 		chosenAction := d.ChoosenAction
@@ -88,6 +88,20 @@ func (sdm SimDataMap) AddData(data SimState) {
 		simData := sdm[dealerScore][playerScore][playerHandCat][chosenAction]
 		simData.ExpectedValue = float32((simData.ExpectedValue*float32(simData.Trials) + float32(d.Value)) / float32(simData.Trials+1))
 		simData.Trials++
+
+		//fmt.Println("Adding data: DSS:", dealerScore, " PS:", playerScore, " cat:", playerHandCat, " Act:", chosenAction, " V:", d.Value)
+		if _, ok := sdm[dealerScore]; !ok {
+			fmt.Printf("Error: Dealer score %d not found in SimDataMap\n", dealerScore)
+			continue
+		}
+		if _, ok := sdm[dealerScore][playerScore]; !ok {
+			fmt.Printf("Error: Player score %d not found for dealer score %d in SimDataMap\n", playerScore, dealerScore)
+			continue
+		}
+		if _, ok := sdm[dealerScore][playerScore][playerHandCat]; !ok {
+			fmt.Printf("Error: Player hand category %d not found for dealer score %d and player score %d in SimDataMap\n", playerHandCat, dealerScore, playerScore)
+			continue
+		}
 		sdm[dealerScore][playerScore][playerHandCat][chosenAction] = simData
 	}
 }

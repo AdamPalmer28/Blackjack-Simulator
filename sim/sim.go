@@ -29,8 +29,12 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 	debugMode := config.IsDebugMode()
 
 	for i := 1; i <= hands; i++ {
+
 		recentSimStates := single_player_sim()
-		//print recentSimStates for debugging
+
+		//fmt.Println("Adding data to simulation data structure...")
+		dataset.AddData(recentSimStates)
+
 		if debugMode {
 		for _, d := range recentSimStates.SimEvalData {
 			fmt.Printf("DSS: %d, DS: %d, S: %d, cat: %d, Act: %d, V: %f\n",
@@ -39,21 +43,16 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 					println("")
 				}
 			}
-		} else {
-			//if i%5000 == 0 {
-			fmt.Println("Simulated", i, "hands...")
-	
-				
-			fmt.Println("Adding data to simulation data structure...")
-			dataset.AddData(recentSimStates)
-	
-			fmt.Println("Saving simulation data to bj_sim_data.json...")
-			dataset.ToJSON()
-		}
+		} 
+		if i%100 == 0 {
+				fmt.Println("Simulated", i, "hands...")
 		
-		if i == 1 { // ! remove later - just for testing
-			return
+		
+				fmt.Println("Saving simulation data to bj_sim_data.json...")
+				dataset.ToJSON()
+			
 		}
+	
 	}
 }
 
@@ -200,11 +199,13 @@ func getHandCategory(hand []game.Card) int {
 	// 0: no ace, 1: has ace, 2: split available
 	hasAce := false
 	canSplit := false
+	rank_sum := 0
 	
 	for _, card := range hand {
 		if card.Rank == 1 {
 			hasAce = true
 		}
+		rank_sum += card.Rank
 	}
 	
 	// Check if split is available (two cards of same rank)
@@ -214,7 +215,7 @@ func getHandCategory(hand []game.Card) int {
 	
 	if canSplit {
 		return 2
-	} else if hasAce {
+	} else if hasAce && rank_sum <= 11 {
 		return 1
 	} else {
 		return 0
