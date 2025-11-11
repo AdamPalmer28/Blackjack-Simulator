@@ -1,6 +1,7 @@
 package sim
 
 import (
+	"blackjack/config"
 	"blackjack/game"
 	"fmt"
 )
@@ -20,18 +21,15 @@ type SimState struct {
 	SimEvalData []SimEvalData // list of all simulation data
 }
 
-var debugMode = true
-
 
 func SimulateBJ(hands int, dataset SimDataMap) {
 	// run many simulations of the game
 	fmt.Println("Starting simulation of", hands, "hands...")
 
+	debugMode := config.IsDebugMode()
+
 	for i := 1; i <= hands; i++ {
 		recentSimStates := single_player_sim()
-		//if i%5000 == 0 {
-		fmt.Println("Simulated", i, "hands...")
-
 		//print recentSimStates for debugging
 		if debugMode {
 		for _, d := range recentSimStates.SimEvalData {
@@ -41,13 +39,17 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 					println("")
 				}
 			}
+		} else {
+			//if i%5000 == 0 {
+			fmt.Println("Simulated", i, "hands...")
+	
+				
+			fmt.Println("Adding data to simulation data structure...")
+			dataset.AddData(recentSimStates)
+	
+			fmt.Println("Saving simulation data to bj_sim_data.json...")
+			dataset.ToJSON()
 		}
-			
-		// fmt.Println("Adding data to simulation data structure...")
-		// dataset.AddData(recentSimStates)
-
-		// fmt.Println("Saving simulation data to bj_sim_data.json...")
-		// dataset.ToJSON()
 		
 		if i == 1 { // ! remove later - just for testing
 			return
@@ -60,7 +62,9 @@ func single_player_sim() SimState {
 	// return the result of the game
 
 	gs := game.StartGame()
-	gs.Print()
+	if config.IsDebugMode() {
+		gs.Print()
+	}	
 
 	simState := SimState{
 		SimEvalData: make([]SimEvalData, 0),
@@ -69,7 +73,9 @@ func single_player_sim() SimState {
 	// Start recursive exploration from initial game state
 	node_explore(gs, &simState)
 	
+	if config.IsDebugMode() {
 	fmt.Println("Simulation complete.")
+	}
 	return simState
 }
 
@@ -95,7 +101,7 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 		// !GAME OVER - will exit here
 		// for this hand, evaluate outcome
 		
-		if debugMode {
+		if config.IsDebugMode() {
 			fmt.Printf("END GAME: DS: %d", gs.DealerScore)
 			for i, v := range gs.PlayerScore {
 				fmt.Printf("  P %d S: %d", i, v)
@@ -105,7 +111,7 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 		total := float32(0)
 
 		for ind, v := range gs.HandValues {
-			if debugMode {
+			if config.IsDebugMode() {
 				fmt.Printf("V%d: %d \n\n", ind, v)
 			}
 			total += float32(v)
@@ -117,19 +123,21 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	currentHandMoves := gs.PlayerMoves[gs.HandToPlay]
 
 	// ! MAIN LOOP
-	fmt.Println("new loop  ",len(simState.SimEvalData))
+	if config.IsDebugMode() {
+		fmt.Println("new loop  ",len(simState.SimEvalData))
+	}
 	actions_vals := make(map[int]float32) // map of action index to value
 	for i, action := range PlayerActions {
 		// do all actions...
 
 		if (action.actionMask&currentHandMoves != 0) || action.actionInt == 0 { // Stand is always possible
 			gsCopy := (&gs).Copy()
-			if debugMode {
+			if config.IsDebugMode() {
 				fmt.Printf("Act: %d || S: %d", action.actionInt, gsCopy.PlayerScore[gs.HandToPlay])
 			}
 			gsCopy.ActionCalc(action.actionMask)
 
-			if debugMode {
+			if config.IsDebugMode() {
 				fmt.Printf(" || Post S: %d\n", gsCopy.PlayerScore[gs.HandToPlay])
 			}
 
@@ -152,7 +160,7 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 		}
 		actions_vals[i] = value
 	}
-	if debugMode {
+	if config.IsDebugMode() {
 		fmt.Printf("<> FIN All Act  %d\n", gs.PlayerScore[gs.HandToPlay])
 	}
 	// ----------------------------------
@@ -179,7 +187,7 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	}
 	final_val := float32(sum_val) / float32(n_acts)
 
-	if debugMode {
+	if config.IsDebugMode() {
 		fmt.Printf("returned V: %f / %d = %f\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
 	}
 

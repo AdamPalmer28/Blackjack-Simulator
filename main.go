@@ -1,6 +1,7 @@
 package main
 
 import (
+	"blackjack/config"
 	"blackjack/game"
 	"blackjack/sim"
 	"bufio"
@@ -12,6 +13,8 @@ import (
 // dataset := sim.CreateSimDataStructure() // create the simulation data structure
 // dataset.ToJSON()
 func main() {
+	// Initialize configuration
+	config.Init()
 
 	fmt.Println("Welcome to the Blackjack Simulator!")
 
