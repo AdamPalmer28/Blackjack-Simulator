@@ -44,7 +44,7 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 				}
 			}
 		} 
-		if i%100 == 0 {
+		if i%10000 == 0 {
 				fmt.Println("Simulated", i, "hands...")
 		
 		
@@ -207,7 +207,7 @@ func getHandCategory(hand []game.Card) int {
 		}
 		rank_sum += card.Rank
 	}
-	# ! I think this is broken ...
+
 	// Check if split is available (two cards of same rank) 
 	if len(hand) == 2 && hand[0].Rank == hand[1].Rank {
 		canSplit = true

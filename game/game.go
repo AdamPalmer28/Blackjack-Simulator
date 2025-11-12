@@ -181,7 +181,7 @@ func (gs *GameState) calcPlayMoves() {
 		// player can double
 		legalMoves |= 0b010
 	}
-	if gs.PlayerHand[playerMove][0].Rank == gs.PlayerHand[playerMove][1].Rank {
+	if (gs.PlayerHand[playerMove][0].Rank == gs.PlayerHand[playerMove][1].Rank) && (len(gs.PlayerHand[playerMove]) == 2) {
 		// player can split
 		legalMoves |= 0b100
 	}
