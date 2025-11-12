@@ -166,32 +166,31 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// Determine value to return
 	// ! FUNCTION EXIT - if game not over
 
-	n_acts, sum_val := 0, float32(0)
+	// Determine returned score by selecting highest expected value
+	max_val := float32(-1000) // Initialize with very low value
+	found_valid := false
 
-	// Determine returned score
-	//     currently this is just mean...
-	for act, val := range actions_vals {
+	for _, val := range actions_vals {
 		if val == -100 {
-			continue //
+			continue // Skip invalid actions
 		}
-		if gs.PlayerScore[gs.HandToPlay] > 14 {
-			// pass
-			act = act + 1 // dummy operation
-			// ! TODO - we may want to account for act probabilities
-			// ? currently there is a bias of downstream actions being random...
-			// e.g. if score > 14 then use best strategy if score <= 14 loop through all actions
+		found_valid = true
+		if val > max_val {
+			max_val = val
 		}
-		n_acts++
-		sum_val += val
 	}
-	final_val := float32(sum_val) / float32(n_acts)
+
+	// If no valid actions found, return a default value
+	if !found_valid {
+		max_val = 0
+	}
 
 	if config.IsDebugMode() {
-		fmt.Printf("returned V: %f / %d = %f\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
+		fmt.Printf("returned V (max): %f\n", max_val)
 	}
 
 
-	return final_val
+	return max_val
 }
 
 // Helper function to categorize player hand
