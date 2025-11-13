@@ -30,7 +30,7 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 
 	for i := 1; i <= hands; i++ {
 
-		recentSimStates := single_player_sim()
+		recentSimStates := single_player_sim(&dataset)
 
 		//fmt.Println("Adding data to simulation data structure...")
 		dataset.AddData(recentSimStates)
@@ -44,8 +44,8 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 				}
 			}
 		} 
-		if i%10000 == 0 {
-				fmt.Println("Simulated", i, "hands...")
+		if i%500_000 == 0 {
+				fmt.Printf("Simulated %d hands...\n", i)
 		
 		
 				fmt.Println("Saving simulation data to bj_sim_data.json...")
@@ -56,7 +56,7 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 	}
 }
 
-func single_player_sim() SimState {
+func single_player_sim(dataset *SimDataMap) SimState {
 	// run a single simulation of the game
 	// return the result of the game
 
@@ -70,7 +70,7 @@ func single_player_sim() SimState {
 	}
 
 	// Start recursive exploration from initial game state
-	node_explore(gs, &simState)
+	node_explore(gs, &simState, dataset)
 	
 	if config.IsDebugMode() {
 	fmt.Println("Simulation complete.")
@@ -92,7 +92,7 @@ var PlayerActions = []struct {
 }
 
 // ! I have rewritten this but not working properly...
-func node_explore(gs game.GameState, simState *SimState) (value float32) {
+func node_explore(gs game.GameState, simState *SimState, dataset *SimDataMap) (value float32) {
 	// for any given hand state, explore all possible actions recursively
 	// returns the value of the final outcome...
 
@@ -121,6 +121,9 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// Get current hand's legal moves
 	currentHandMoves := gs.PlayerMoves[gs.HandToPlay]
 
+	// Get hand category once before the loop
+	hand_cat := getHandCategory(gs.PlayerHand[gs.HandToPlay])
+
 	// ! MAIN LOOP
 	if config.IsDebugMode() {
 		fmt.Println("new loop  ",len(simState.SimEvalData))
@@ -141,13 +144,13 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 			}
 
 			// Continue exploring from this state
-			value = node_explore(gsCopy, simState)
+			value = node_explore(gsCopy, simState, dataset)
 
 			simData := SimEvalData{
 				DealerStart:    gs.DealerShownScore,
 				DealerScore:    gs.DealerScore,
 				PlayerScores:   gs.PlayerScore[gs.HandToPlay],
-				PlayerHandCats: getHandCategory(gs.PlayerHand[gs.HandToPlay]),
+				PlayerHandCats: hand_cat,
 				ChoosenAction:  action.actionInt,
 				Value:          value,  // Will be updated when game finishes
 			}
@@ -166,28 +169,30 @@ func node_explore(gs game.GameState, simState *SimState) (value float32) {
 	// Determine value to return
 	// ! FUNCTION EXIT - if game not over
 
-	n_acts, sum_val := 0, float32(0)
-
-	// Determine returned score
-	//     currently this is just mean...
-	for act, val := range actions_vals {
-		if val == -100 {
-			continue //
+	// Find the best action based on expected values from the dataset
+	var best_action int = 0  // default to stand
+	var best_expected_value float32 = -1000
+	
+	// Check if we have data for this state in our dataset
+	if dealerMap, ok := (*dataset)[gs.DealerShownScore]; ok {
+		if playerMap, ok := dealerMap[gs.PlayerScore[gs.HandToPlay]]; ok {
+			if categoryMap, ok := playerMap[hand_cat]; ok {
+				// Find action with highest expected value
+				for action, simData := range categoryMap {
+					if simData.Trials > 0 && simData.ExpectedValue > best_expected_value {
+						best_expected_value = simData.ExpectedValue
+						best_action = action
+					}
+				}
+			}
 		}
-		if gs.PlayerScore[gs.HandToPlay] > 14 {
-			// pass
-			act = act + 1 // dummy operation
-			// ! TODO - we may want to account for act probabilities
-			// ? currently there is a bias of downstream actions being random...
-			// e.g. if score > 14 then use best strategy if score <= 14 loop through all actions
-		}
-		n_acts++
-		sum_val += val
 	}
-	final_val := float32(sum_val) / float32(n_acts)
+
+	// Determine returned score - use the best action's value
+	final_val := actions_vals[best_action]
 
 	if config.IsDebugMode() {
-		fmt.Printf("returned V: %f / %d = %f\n", sum_val, n_acts, float64(sum_val)/float64(n_acts))
+		fmt.Printf("Best action: %d, returned V: %f\n", best_action, final_val)
 	}
 
 

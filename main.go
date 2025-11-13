@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"time"
 )
 
 // dataset := sim.CreateSimDataStructure() // create the simulation data structure
@@ -23,7 +24,10 @@ func main() {
 
 	fmt.Println("Beginning simulating bj hands...")
 
-	sim.SimulateBJ(100_000, dataset) // run 100,000 simulations and save to dataset
+	start := time.Now() // Start timing
+	sim.SimulateBJ(20_000_000, dataset)
+	elapsed := time.Since(start) // Calculate elapsed time
+	fmt.Printf("\n\nSimulation completed in %s\n", elapsed)
 
 
 
