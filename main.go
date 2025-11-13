@@ -25,7 +25,7 @@ func main() {
 	fmt.Println("Beginning simulating bj hands...")
 
 	start := time.Now() // Start timing
-	sim.SimulateBJ(20_000_000, dataset)
+	sim.SimulateBJ(50_000_000, dataset)
 	elapsed := time.Since(start) // Calculate elapsed time
 	fmt.Printf("\n\nSimulation completed in %s\n", elapsed)
 
