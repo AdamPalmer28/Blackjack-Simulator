@@ -23,6 +23,20 @@ The analysis produces optimal strategy heatmaps for three types of hands:
 2. **Soft Hands** (with ace)
 3. **Pairs** (split available)
 
+### Strategy Heatmaps
+
+#### Hard Hand Strategy
+
+![Hard Hand Strategy](analysis/strategy_heatmap_0_normal_hand.png)
+
+#### Soft Hand Strategy (With Ace)
+
+![Soft Hand Strategy](<analysis/strategy_heatmap_1_soft_hand_(ace).png>)
+
+#### Pair Strategy (Split Available)
+
+![Pair Strategy](<analysis/strategy_heatmap_2_pair_(split_available).png>)
+
 ### Key Findings
 
 Based on the simulation data:
