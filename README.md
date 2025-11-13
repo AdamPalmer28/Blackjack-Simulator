@@ -2,29 +2,23 @@
 
 A computational exercise implementing a recursive blackjack simulator in Go to explore all possible game states and determine optimal playing strategies through statistical analysis.
 
-## Quick Start
+While blackjack is a solved game with well-documented optimal strategies, this project serves as a computational exercise in:
 
-### Running Simulations
+- Recursive algorithm implementation
+- State space exploration
+- Statistical data collection and analysis + visualisations
+- Go programming language proficiency
 
-```bash
-go run .
-```
-
-This runs simulations and saves results to `bj_sim_data.json`.
-
-### Analyzing Results
-
-Navigate to the `analysis/` directory and run the Jupyter notebook to generate strategy charts:
-
-```bash
-cd analysis
-pip install -r requirements.txt
-jupyter notebook blackjack_analysis.ipynb
-```
+The simulator provides empirical validation of theoretical blackjack strategies through comprehensive state space exploration and statistical analysis.
 
 ## Analysis and Findings
 
+Number of hands simulated 100,000,000 hand simulation.
+All possible gamestates are explored for all hands (to cover every possible player option from this postion).
+This therefore will result in near to 1,000,000,000 hand outcomes being evaluated.
+
 The analysis produces optimal strategy heatmaps for three types of hands:
+
 1. **Hard Hands** (no ace)
 2. **Soft Hands** (with ace)
 3. **Pairs** (split available)
@@ -34,6 +28,7 @@ The analysis produces optimal strategy heatmaps for three types of hands:
 Based on the simulation data:
 
 #### Overall Statistics
+
 - **Most common optimal action**: Hit (37.9% of situations)
 - **Average expected value**: +0.015 (slight player advantage with optimal play)
 - **Best possible situation**: Splitting 2s against dealer's 6 (EV: +1.15)
@@ -42,16 +37,19 @@ Based on the simulation data:
 #### Strategy by Hand Type
 
 **Hard Hands (No Ace)**
+
 - Average EV: -0.11 (player disadvantage)
 - Strategy: Hit aggressively on low totals (≤11), stand on 17+
 - Most challenging: Hard 12-16 vs dealer's high cards (7-10, Ace)
 
 **Soft Hands (With Ace)**
+
 - Average EV: +0.13 (player advantage)
 - Strategy: More aggressive with doubling, especially vs weak dealer cards (4-6)
 - Key advantage: Flexibility of the ace allows risk-taking
 
 **Pairs (Split Available)**
+
 - Average EV: +0.15 (best overall category)
 - Strategy: Split aggressively (59% of situations)
 - Always split: Aces and 8s
@@ -61,6 +59,7 @@ Based on the simulation data:
 #### Dealer Impact
 
 Dealer's shown card significantly affects player advantage:
+
 - **Worst for player**: Dealer shows 10 (avg EV: -0.38)
 - **Best for player**: Dealer shows 6 (avg EV: +0.18)
 - **Weak dealer cards** (4-6): Player should be more aggressive with doubles and splits
@@ -85,7 +84,6 @@ blackjack/
 ├── analysis/           # Python analysis tools
 │   ├── blackjack_analysis.ipynb  # Jupyter notebook
 │   ├── requirements.txt          # Python dependencies
-│   └── README.md                 # Analysis documentation
 └── bj_sim_data.json    # Simulation results
 ```
 
@@ -105,10 +103,12 @@ blackjack/
 - Actions: Hit, Stand, Double Down, Split
 - Proper ace handling (soft/hard conversion)
 - Bet value tracking for expected value calculation
+- BlackJack (score = 21) does NOT pay 3:2
 
 ### Data Structure
 
 Simulation results are stored hierarchically:
+
 ```
 [Dealer Score][Player Score][Hand Category][Action] → {Expected Value, Trials}
 ```
@@ -127,14 +127,3 @@ Simulation results are stored hierarchically:
   - matplotlib
   - seaborn
   - numpy
-
-## Academic Context
-
-While blackjack is a solved game with well-documented optimal strategies, this project serves as a computational exercise in:
-- Recursive algorithm implementation
-- State space exploration
-- Statistical data collection and analysis
-- Go programming language proficiency
-- Data visualization techniques
-
-The simulator provides empirical validation of theoretical blackjack strategies through comprehensive state space exploration and statistical analysis.
