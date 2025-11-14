@@ -4,6 +4,7 @@ import (
 	"blackjack/config"
 	"blackjack/game"
 	"fmt"
+	"time"
 )
 
 // individual simulation data piece
@@ -24,7 +25,8 @@ type SimState struct {
 
 func SimulateBJ(hands int, dataset SimDataMap) {
 	// run many simulations of the game
-	fmt.Println("Starting simulation of", hands, "hands...")
+	startTime := time.Now()
+	fmt.Printf("Starting simulation of %d million hands at %s...\n", hands / 1_000_000, startTime.Format("15:04:05"))
 
 	debugMode := config.IsDebugMode()
 
@@ -44,16 +46,29 @@ func SimulateBJ(hands int, dataset SimDataMap) {
 				}
 			}
 		} 
-		if i%500_000 == 0 {
-				fmt.Printf("Simulated %d hands...\n", i)
-		
-		
-				fmt.Println("Saving simulation data to bj_sim_data.json...")
+		if i%1_000_000 == 0 {
+				elapsed := time.Since(startTime)
+				handsPerSecond := float64(i) / elapsed.Seconds()
+				progress := float64(i) / float64(hands) * 100
+				estTimeRemaining := float64(hands - i) / handsPerSecond 
+
+				fmt.Printf("Progress: %.2f%% \n", progress)
+				fmt.Printf("Simulated %d million hands (%.2f hands/sec, elapsed: %s)\n", 
+					i/1_000_000, handsPerSecond, elapsed.Round(time.Second))
+				fmt.Printf("Est. time remaining: %.2f seconds\n\n", estTimeRemaining)
+
+
+				//fmt.Println("Saving simulation data to bj_sim_data.json...")
 				dataset.ToJSON()
 			
 		}
 	
 	}
+	
+	totalElapsed := time.Since(startTime)
+	finalRate := float64(hands) / totalElapsed.Seconds()
+	fmt.Printf("Simulation completed! Total time: %s (%.2f hands/sec)\n", 
+		totalElapsed.Round(time.Millisecond), finalRate)
 }
 
 func single_player_sim(dataset *SimDataMap) SimState {
