@@ -13,9 +13,9 @@ The simulator provides empirical validation of theoretical blackjack strategies 
 
 ## Analysis and Findings
 
-Number of hands simulated 100,000,000 hand simulation.
-All possible gamestates are explored for all hands (to cover every possible player option from this postion).
-This therefore will result in near to 1,000,000,000 hand outcomes being evaluated.
+Number of hands simulated: 1,000,000,000 hand simulation.
+All possible gamestates are explored for all hands (to cover every possible player option from this position).
+This therefore will result in over ~9,000,000,000 hand outcomes being evaluated.
 
 The analysis produces optimal strategy heatmaps for three types of hands:
 
@@ -43,29 +43,40 @@ Based on the simulation data:
 
 #### Overall Statistics
 
-- **Most common optimal action**: Hit (37.9% of situations)
-- **Average expected value**: +0.015 (slight player advantage with optimal play)
-- **Best possible situation**: Splitting 2s against dealer's 6 (EV: +1.15)
-- **Worst situation**: Hard 16 vs dealer 10 (EV: -0.79)
+- **Total game states analyzed**: 350
+- **Most common optimal action**: Hit (32.9% of situations)
+- **Average expected value**: +0.022 (slight player advantage with optimal play)
+- **Best possible situation**: Splitting 2s against dealer's 6 (EV: +1.12)
+- **Worst situation**: Hard 16 vs dealer 9 (EV: -0.71)
+
+**Action distribution across all states:**
+
+- Hit: 115 states (32.9%)
+- Stand: 114 states (32.6%)
+- Double: 62 states (17.7%)
+- Split: 59 states (16.9%)
 
 #### Strategy by Hand Type
 
-**Hard Hands (No Ace)**
+**Hard Hands (Normal)**
 
-- Average EV: -0.11 (player disadvantage)
-- Strategy: Hit aggressively on low totals (≤11), stand on 17+
+- States analyzed: 160
+- Average EV: -0.12 (player disadvantage)
+- Strategy: Stand (43.1%), Hit (40.6%), Double (16.2%)
 - Most challenging: Hard 12-16 vs dealer's high cards (7-10, Ace)
 
-**Soft Hands (With Ace)**
+**Soft Hands (Has Ace)**
 
-- Average EV: +0.13 (player advantage)
-- Strategy: More aggressive with doubling, especially vs weak dealer cards (4-6)
-- Key advantage: Flexibility of the ace allows risk-taking
+- States analyzed: 90
+- Average EV: +0.14 (player advantage)
+- Strategy: Hit (35.6%), Stand (34.4%), Double (30.0%)
+- Key advantage: Flexibility of the ace allows aggressive doubling vs weak dealer cards
 
 **Pairs (Split Available)**
 
+- States analyzed: 100
 - Average EV: +0.15 (best overall category)
-- Strategy: Split aggressively (59% of situations)
+- Strategy: Split (59.0%), Hit (18.0%), Stand (14.0%), Double (9.0%)
 - Always split: Aces and 8s
 - Never split: 10s and 5s
 - Best opportunities: Low pairs vs dealer's weak cards
@@ -74,8 +85,21 @@ Based on the simulation data:
 
 Dealer's shown card significantly affects player advantage:
 
-- **Worst for player**: Dealer shows 10 (avg EV: -0.38)
-- **Best for player**: Dealer shows 6 (avg EV: +0.18)
+**Average EV by dealer shown score (worst to best for player):**
+
+- Dealer shows 10: -0.34
+- Dealer shows 9: -0.20
+- Dealer shows Ace: -0.20
+- Dealer shows 8: -0.06
+- Dealer shows 2: +0.05
+- Dealer shows 7: +0.08
+- Dealer shows 3: +0.10
+- Dealer shows 4: +0.19
+- Dealer shows 5: +0.28
+- **Best for player**: Dealer shows 6: +0.33
+
+**Strategic implications:**
+
 - **Weak dealer cards** (4-6): Player should be more aggressive with doubles and splits
 - **Strong dealer cards** (9, 10, Ace): Conservative play with focus on not busting
 

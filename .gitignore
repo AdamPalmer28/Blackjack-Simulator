@@ -9,5 +9,4 @@ main.exe
 
 # Analysis outputs
 analysis/*.csv
-analysis/*.png
 analysis/.ipynb_checkpoints/
